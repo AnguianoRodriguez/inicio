@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todoparatufiestastyle.css">
+</head>
+<body>
+
+    <header class="header"> 
+
+        <div class="menu container">
+            <a href="#" class="logo"> Dulceria Chuchin y diana</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="todoparaimages/menu.png" class="menu-icono">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../Inicio.html.html">Inicio</a></li>
+                    <li><a href="todoparatufiesta.html">Todo para tu fiesta</a></li>
+                    <li><a href="dulcespormayoreo.html">Dulces por mayoreo</a></li>
+                    <li><a href="materiaprima.html">Materia prima</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+
+            <div class="header-txt">
+
+                <h1>Todo para tu fiesta</h1>
+
+            </div>
+
+            
+        </div>
+
+    </header>
+
+    <section class="general container">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #fff8e1;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+    
+            .offer-container {
+                max-width: 700px;
+                margin: auto;
+                background-color: #ffccbc;
+                padding: 25px;
+                border-radius: 15px;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+    
+            .offer-container:hover {
+                transform: scale(1.05);
+            }
+    
+            h2 {
+                color: #d84315;
+                font-size: 26px;
+            }
+    
+            p {
+                color: #5d4037;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        </style>
+    
+    <body>
+    
+        <div class="offer-container">
+            <h2>Te ofrecemos...</h2>
+            <p>
+                Te podemos ofrecer todo tipo de artículos para tu fiesta.  
+                Puedes visitar nuestro local y encontrar lo que más te agrade,  
+                o decirnos qué necesitas y nosotros te lo conseguimos  
+                para que no tengas que buscarlo.
+            </p>
+        </div>
+    
+    </body>
+
+        <div class="general-content">
+
+            <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .lista {
+            list-style: none;
+            padding: 0;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-bottom: 1px solid #ccc;
+            padding: 15px;
+            font-size: 18px;
+        }
+        .item img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+        .item span {
+            flex: 1;
+        }
+    </style>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff8e1;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .carousel-container {
+        position: relative;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        background-color: #ffccbc;
+        padding: 20px;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .text {
+        margin-top: 10px;
+        color: #5d4037;
+        font-size: 16px;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="slide">
+            <img src="todoparaimages/r1.jpeg" alt="Local">
+            <p class="text"><strong>Local:</strong><br>Puedes venir a nuestro local, buscar el producto y nosotros ofrecértelo.</p>
+        </div>
+        <div class="slide">
+            <img src="todoparaimages/r2.jpeg" alt="Pedido">
+            <p class="text"><strong>Pedido:</strong><br>Puedes hacernos un pedido en específico y nosotros te lo conseguimos en corto plazo.</p>
+        </div>
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<script>
+    let index = 0;
+
+    function moveSlide(step) {
+        const slides = document.querySelector(".carousel");
+        const totalSlides = document.querySelectorAll(".slide").length;
+
+        index = (index + step + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(${-index * 100}%)`;
+    }
+</script>
+</body>
+
+
+
+
+    <footer class="footer container">
+        
+        <div class="footer-txt">
+            <p>Los Heroes Tecamac, C. Bosque de los abedules, Mz 86 Lt 7 Cs. 2, 55764 Méx.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

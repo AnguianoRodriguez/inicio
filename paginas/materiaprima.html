@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materiaprimastyle.css">
+</head>
+<body>
+
+    <header class="header"> 
+
+        <div class="menu container">
+            <a href="#" class="logo"> Dulceria Chuchin y diana</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="materiapimages/menu.png" class="menu-icono">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../Inicio.html.html">Inicio</a></li>
+                    <li><a href="todoparatufiesta.html">Todo para tu fiesta</a></li>
+                    <li><a href="dulcespormayoreo.html">Dulces por mayoreo</a></li>
+                    <li><a href="materiaprima.html">Materia prima</a></li>
+                    <li><a href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+
+            <div class="header-txt">
+
+                <h1>Materia prima</h1>
+
+            </div>
+
+            
+        </div>
+
+    </header>
+
+    <section class="general container">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #fff8e1;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+    
+            .offer-container {
+                max-width: 700px;
+                margin: auto;
+                background-color: #ffccbc;
+                padding: 25px;
+                border-radius: 15px;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+            }
+    
+            .offer-container:hover {
+                transform: scale(1.05);
+            }
+    
+            h2 {
+                color: #d84315;
+                font-size: 26px;
+            }
+    
+            p {
+                color: #5d4037;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        </style>
+    
+    <body>
+    
+        <div class="offer-container">
+            <h2>Te podemos ofrecer...</h2>
+            <p>
+                  Te podemos ofrecer distintos tipos de materia prima de unicel o plástico
+                  de igual manera te lo ofrecemos en mayoreo y en menudeo, ya sea para tu
+                  negocio o para consumo propio; así como también bolsas de diferentes medidas,
+                  por mayoreo y menudeo, consumo propio o para negocio.
+            </p>
+        </div>
+    
+    </body>    
+
+        <div class="general-content">
+
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #fff8e1;
+                    text-align: center;
+                    margin: 0;
+                    padding: 20px;
+                }
+        
+                .carousel-container {
+                    position: relative;
+                    max-width: 600px;
+                    margin: auto;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+                    background-color: #ffccbc;
+                    padding: 20px;
+                }
+        
+                .carousel {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+        
+                .slide {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                }
+        
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+        
+                .text {
+                    margin-top: 10px;
+                    color: #5d4037;
+                    font-size: 16px;
+                    padding: 10px;
+                }
+        
+                .prev, .next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    font-size: 18px;
+                }
+        
+                .prev { left: 10px; }
+                .next { right: 10px; }
+        
+                .prev:hover, .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+            </style>
+        </head>
+        <body>
+        
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide">
+                        <img src="materiapimages/r1.jpeg" alt="Local/Mayoreo y menudeo">
+                        <p class="text"><strong>Local/Mayoreo y menudeo:</strong><br>
+                        Encuentra materiales como vasos, platos y bolsas en diferentes tamaños en nuestro local.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="materiapimages/r2.jpeg" alt="Encargo Menudeo">
+                        <p class="text"><strong>Encargo Menudeo:</strong><br>
+                        Pide un material en específico, como un tipo de vaso o plato, y recógelo en el tiempo acordado.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="materiapimages/r3.jpeg" alt="Encargo Mayoreo">
+                        <p class="text"><strong>Encargo Mayoreo:</strong><br>
+                        Realiza un pedido grande de vasos, platos y bolsas en una o varias medidas, con entrega en fecha acordada.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="materiapimages/r4.jpeg" alt="Ejemplo de Producto">
+                        <p class="text"><strong>Ejemplo de Producto:</strong><br>
+                        Te mostramos ejemplos de productos disponibles para encargo, ajustándonos a tu necesidad.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="materiapimages/r5.jpeg" alt="Entrega de Material">
+                        <p class="text"><strong>Entrega de Material:</strong><br>
+                        Recibe tu encargo en el local o consulta por opciones de entrega a domicilio.</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        
+            <script>
+                let index = 0;
+        
+                function moveSlide(step) {
+                    const slides = document.querySelector(".carousel");
+                    const totalSlides = document.querySelectorAll(".slide").length;
+        
+                    index = (index + step + totalSlides) % totalSlides;
+                    slides.style.transform = `translateX(${-index * 100}%)`;
+                }
+            </script>
+        
+        </body>
+
+        </div>
+    </section>
+
+
+    <footer class="footer container">
+
+        <h2>...</h2>
+
+        
+        <div class="footer-txt">
+            <p>Los Heroes Tecamac, C. Bosque de los abedules, Mz 86 Lt 7 Cs. 2, 55764 Méx.</p>
+        </div>
+
+    </footer>
+
+
+
+    
+</body>
+</html>
